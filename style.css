@@ -1,0 +1,152 @@
+#parent1{
+width: 100%;
+height: 170px;
+background-color: red;
+display: flex;
+}
+
+#enfant1{
+    width: 49%;
+    height: 150px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+
+}
+
+#enfant2{
+    width: 49%;
+    height: 150px;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; transition: all 3s;
+}
+
+#carre1{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+}
+
+#carre2{
+    width: 80px;
+    height: 80px;
+    background-color: pink;
+    margin: 10px;
+}
+
+#carre3{
+    width: 80px;
+    height: 80px;
+    background-color: pink;
+    margin:10px
+}
+
+#grandparent1{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carre4{
+    width: 49px;
+    height: 49px;
+    background-color: aqua;
+}
+
+#maitre1{
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#maitre2{
+    width: 50%;
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.merde1{
+    width: 49px;
+    height: 49px;
+    background-color: coral;
+}
+
+#giga{
+    width: 100%;
+    height: 300px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mega{
+    width: 35%;
+    height: 300px;
+    background-color: blueviolet;
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    #carre1{
+        background-color: bisque;
+    }
+}
+@media screen and (max-width: 600px) {
+    #enfant2{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1000px){
+    #grandparent1{
+        display: none;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1500px) {
+    #grandparent1{
+        background-color : purple;
+        display: block;
+        flex-direction: column;
+
+    }
+    
+}
+li {
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d9cede;
+}
+@media screen and (max-width:1000px){
+    nav{
+        display: none;
+    }
+}
+.menuburguer span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin:6px 0px;
+}
+@media screen and (min-width:1000px) {
+    .menuburguer{
+        display: none;
+    }
+}
